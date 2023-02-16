@@ -3,7 +3,7 @@ function lisOfWords() {
 
   while (true) {
     const word = prompt("Enter a word, or type 'stop' to quit:");
-    if (word.toLowerCase() === "stop") {
+    if (word.toLowerCase().trim() === "stop") {
       break;
     }
     words.push(word);
